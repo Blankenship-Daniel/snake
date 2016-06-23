@@ -1,12 +1,12 @@
 <?php
 require_once('../storage/DBhighScores.php');
 $servername = "localhost";
-$username = "theblas4";
-$password = '$("#Greenolive5");';
-$results = '';
+$username = "..."; // extracted
+$password = "..."; // extracted
+$results = "";
 
 try {
-    $conn = new PDO("mysql:host=$servername;dbname=theblas4_snake_high_scores", $username, $password);
+    $conn = new PDO("mysql:host=$servername;dbname=...", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $dbHighScores = new HighScores($conn);
 
