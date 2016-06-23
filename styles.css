@@ -1,0 +1,442 @@
+body {
+    width: 100%;
+    margin: 0; 
+    line-height: 1.231;
+    overflow-x: hidden;
+}
+ul {
+    list-style-type: circle;
+    padding: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 15px;
+}
+p { margin: 1em 0; }
+a { 
+    text-decoration: none; 
+    color: #000;
+}
+#site_wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/***********************************
+ * COLOR SCHEME
+ **********************************/
+.blue       { background: #105b63; }
+.light-blue { background: #126770; }
+.dark-blue  { background: #0c444a; }
+.opaque     { background: #fffad5; }
+.yellow     { background: #ffd34e; }
+.mustard    { background: #db9e36; }
+.clay       { background: #bd4932; }
+.white      { background: #fff;    }
+.gray       { background: #d3d3d3: }
+.text-white      { color: #fff;    }
+.text-gray       { color: #d3d3d3; }
+.text-green      { color: #0d7043; }
+.text-blue       { color: #105b63; }
+.text-light-blue { color: #126770; }
+.text-clay       { color: #bd4932; }
+.hr-yellow {
+    height: 0;
+    width: 100%;
+    border: 2px solid #ffd34e;
+}
+.hr-blue {
+    height: 0;
+    width: 100%;
+    border: 2px; solid #105b63;
+}
+
+/***********************************
+ * FONT DEFINITIONS
+ **********************************/
+.open-sans { font-family: 'Open Sans', sans-serif; }
+.oswald    { font-family: 'Oswald', sans-serif;    }
+
+.unreal { font-size: 4em;    }
+.huge   { font-size: 3em;    } 
+.title  { font-size: 2em;    }
+.big    { font-size: 1.5em;  }
+.large  { font-size: 1.25em; }
+.normal { font-size: 1em;    }
+.small  { font-size: .75em;  }
+
+/***********************************
+ * SECTION DEFINITIONS
+ **********************************/
+#header {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.section {
+    width: 100%;
+    min-height: 900px;
+    position: relative;
+}
+
+#about_me_wrapper {
+    width: 900px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+#portfolio_wrapper {
+    width: 900px;
+    min-height: 600px;
+    margin: 0 auto;
+}
+
+#port_img_wrapper {
+    width: 500px;
+    min-height: 600px;
+}
+
+#portfolio_label {
+    font-size: 5em;
+}
+
+#portfolio_content {
+    width: 400px;
+    min-height: 600px;
+    margin-bottom: 5%;
+}
+
+.inner {
+    padding-top: 5%;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1170px;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+
+/***********************************
+ * UTILITY 
+ **********************************/
+.left          { float: left;    }
+.right         { float: right;   }
+.clear         { clear: both;    }
+.clear-left    { clear: left;    }
+.clear-right   { clear: right;   }
+.light-padding { padding: 1% 1%; }
+.rev-box-shadow {
+    -moz-box-shadow: inset 0 0 20px #000;
+    -webkit-box-shadow: inset 0 0 20px #000;
+    box-shadow: inset 0 0 20px #000;
+}
+.vr { border-left: 1px solid #000; }
+.hr { 
+    border: 1px solid #000;
+    width: 100%; 
+}
+.bold { font-weight: bold; }
+.line { width: 100%;       }
+.line-space { 
+    height: 6px;
+    width: 100%;
+}
+.italics {
+    font-style: italic;
+}
+.ui.input {
+    background: white;
+}
+/**********************************
+ * SPECIFIC
+ *********************************/
+#scroll_indicator {
+    display: none;
+}
+
+#dan_icon { padding: 8px 8px;  }
+
+#mug_shot {
+    width: 400px;
+    height: 600px;
+    margin-left: 5%;
+    margin-right: 5%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+#personal_desc { width: 350px; }
+
+#mtn_range {
+    width: 1000px;
+    height: 300px;
+    position: absolute;
+    top: 600px;
+    margin-left: -500px;
+    left: 50%;
+    z-index: 1;
+}
+
+#mtn_range_back {
+    width: 1200px;
+    height: 300px;
+    position: absolute;
+    top: 600px;
+    margin-left: -600px;
+    left: 50%;
+    z-index: 1;
+}
+
+.text-white.huge.download.icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -35px;
+    margin-left: -40px;
+}
+
+.big.download.icon {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+.big.download.icon:hover {
+    cursor: pointer;
+    color: #126770;
+    font-size: 2.5em;
+    top: 35px;
+    right: 35px;
+}
+
+#button_wrapper {
+    height: 50px;
+    margin-top: 10px;
+}
+
+#score {
+    top: -5px;
+    left: 10px;
+    position: absolute;
+    z-index: 2000;
+    overflow: hidden;
+}
+
+#close_icon {
+    top: 10px;
+    right: 5px;
+    position: absolute;
+    z-index: 2000;
+    overflow: hidden;
+}
+
+#close_icon:hover {
+    cursor: pointer;
+}
+
+#high_scores {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    z-index: 2000;
+    overflow: hidden;
+}
+
+#high_scores_cell {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 80%;
+    text-align: center;
+}
+
+#snake_wrapper {
+    border: 5px solid #0c444a;
+    width: 700px;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    margin: auto;
+    overflow: hidden;
+}
+
+#player_name {
+    width: 185px;
+}
+
+#name_entry { display: none; }
+
+#splash_screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 700px;
+    height: 600px;
+    overflow: hidden;
+    z-index: 3000;
+}
+
+#splash_screen div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 325px;
+    height: 80px;
+}
+
+canvas {
+    background: #105b63;
+}
+
+/***********************************
+ * RESUME STYLES
+ **********************************/
+#resume_wrapper {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1170px;
+    height: 900px;
+}
+
+#resume {
+    font-family: 'Libre Baskerville', serif;
+    padding: 37px;
+    position: absolute;
+    margin-top: -412px;
+    margin-left: -319px;
+    top: 50%;
+    left: 50%;
+    width: 563px;
+    height: 751px;
+    background: white;
+    -moz-box-shadow: 1px 7px 13px -2px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 1px 7px 13px -2px rgba(0,0,0,0.5);
+    box-shadow: 1px 7px 13px -2px rgba(0,0,0,0.5);
+}
+#resume_sub_text span  { padding: 3px;  }
+#resume_name       { font-size: 1.75em; }
+.resume-small-text { font-size: .6em;   }
+.resume-norm-text  { font-size: .6em;   }
+#resume_link       { display: none;     }
+#education_sub_header {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: .7em;
+}
+.resume-sub-header { 
+    margin-top: 13px;
+    margin-bottom: 10px;
+    font-size: .7em;   
+}
+.resume-link-label { font-size: 2.5em; }
+#resume_download_icon {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+/*********************************
+ * MEDIA QUERIES
+ ********************************/
+@media (max-width: 980px) {
+    #about_me_wrapper { width: 780px;      }
+    #name_label       { font-size: 3em;    }
+    #personal_desc    { font-size: 1.15em; }
+    #mug_shot {
+        width: 300px;
+        height: 450px;
+    }
+    .inner { 
+        padding-top: 160px; 
+    }
+    #portfolio_wrapper {
+        width: 780px;
+    }
+    #port_img_wrapper {
+        width: 350px;
+        min-height: 350px;
+    }
+    #port_img {
+        width: 350px;
+        height: 350px;
+    }
+    #portfolio_content { 
+        width: 350px;
+    }
+    #portfolio_label {
+        font-size: 3em;
+    }
+    .p-img {
+        width: 340px;
+        height: 165px;
+    }
+    #snake_section {
+        display: none;
+    }
+}
+@media (max-width: 815px) {
+    #mug_shot { 
+        padding: 0; 
+        margin: 2% 0;
+    }
+    #name_label, #personal_desc { 
+        width: 250px;
+        margin-top: 20px;
+        margin-left: 25px;
+        clear: left; 
+    }
+    #personal_desc { margin-bottom: 25px; }
+    #mtn_range, #mtn_range_back, #scroll_indicator_wrapper { display: none; }
+    .inner {
+        width: 300px;
+        height: 100%;
+        padding-top: 0;
+    }
+    #portfolio_wrapper {
+        width: 100%;
+        height: 100%;
+    }
+    #port_img_wrapper {
+        width: 300px;
+        min-height: 300px;
+    }
+    #port_img {
+        width: 300px;
+        height: 300px;
+    }
+    #portfolio_content { 
+        width: 300px;
+    }
+    #portfolio_label {
+        font-size: 3em;
+    }
+    .p-img {
+        width: 290px;
+        height: 140px;
+    }
+}
+@media (max-width: 650px) {
+    #mug_shot { margin: 5% 0; }
+    #about_me_wrapper {
+        width: 100%;
+        height: 100%;
+    }
+    .section.clay { display: none;   }
+    #resume_link  { display: inline; }
+}
